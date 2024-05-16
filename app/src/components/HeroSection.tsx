@@ -6,10 +6,10 @@ export default function Hero() {
       <div className='grid grid-cols-1 lg:grid-cols-12'>
         <div className='col-span-7 place-self-center'>   
     <h1 className="text-white text-4xl lg:text-6xl font-extrabold mb-4 ">
-        LOREM IP SUMM
+      HORNS OF A DILEMMA
       </h1>
       <p className='text-[#adb7b8] text-lg lg:text-xl mb-6 font-medium'>
-        Loem ipsum dolor sit amet, consectetur adipisicing elit. Ratione officiis explicabo, esse iusto ullam quis, facilis voluptates rem similique sed ab accusantium maxime. Voluptate mollitia quod placeat! Accusamus, sint alias!
+      My name is Maximus Decimus Meridius, commander of the Armies of the North, General of the Felix Legions and loyal servant to the true emperor, Marcus Aurelius!
           </p>
           <div>
             <button className='px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'>
