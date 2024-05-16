@@ -13,8 +13,13 @@ export default function Hero() {
       </p>
         </div>
         <div className='col-span-5'>
-          <div className='mt-5 rounded-full aspect-square bg-[#181818] w-[500px] h-[400px] relative'>
-            
+          <div className='mt-5 rounded-full aspect-square bg-[#181818] w-[250px] h-[250px] relative'>
+          <Image
+              className='absolute transform -translate-x-1/2   left-1/2'
+            src="/images/dev.png"
+            alt='hero image'
+            width={300}
+            height={300} />
         </div>
             </div>
       </div>
