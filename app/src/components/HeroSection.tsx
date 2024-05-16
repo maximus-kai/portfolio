@@ -8,18 +8,25 @@ export default function Hero() {
     <h1 className="text-white text-4xl lg:text-6xl font-extrabold mb-4 ">
         LOREM IP SUMM
       </h1>
-      <p className='text-[#adb7b8] text-lg lg:text-xl font-medium'>
+      <p className='text-[#adb7b8] text-lg lg:text-xl mb-6 font-medium'>
         Loem ipsum dolor sit amet, consectetur adipisicing elit. Ratione officiis explicabo, esse iusto ullam quis, facilis voluptates rem similique sed ab accusantium maxime. Voluptate mollitia quod placeat! Accusamus, sint alias!
-      </p>
+          </p>
+          <div>
+            <button className='px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'>
+              To Be
+            </button>
+            <button className='px-6 py-3 rounded-full bg-transparent border border-white text-white hover:bg-slate-800 mt-3'>
+              Not To Be             </button>
+          </div>
         </div>
-        <div className='col-span-5'>
-          <div className='mt-5 rounded-full aspect-square bg-[#181818] w-[250px] h-[250px] relative'>
+        <div className='col-span-5 mt-4 lg:mt-0 place-self-center'>
+          <div className=' rounded-full aspect-square bg-[#181818] w-[250px] h-[250px] relative'>
           <Image
               className='absolute transform -translate-x-1/2   left-1/2'
             src="/images/dev.png"
             alt='hero image'
-            width={300}
-            height={300} />
+            width={250}
+            height={250} />
         </div>
             </div>
       </div>
