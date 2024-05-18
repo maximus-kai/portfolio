@@ -7,12 +7,15 @@ export default function Hero() {
         <div className='col-span-7 place-self-center text-center sm:text-left'>   
     <h1 className="text-white text-4xl lg:text-6xl sm:text-5xl font-extrabold mb-4 ">
             <span className='text-transparent text-white bg-clip-text bg-gradient-to-r from-blue-500 to-orange-500'>
-            HORNS OF A{" "}
+            Hello, I'm{" "}
             </span> 
-            DILEMMA
+            Tomiwa
       </h1>
       <p className='text-[#adb7b8] text-lg lg:text-xl mb-6 font-medium'>
-      My name is Maximus Decimus Meridius, commander of the Armies of the North, General of the Felix Legions and loyal servant to the true emperor, Marcus Aurelius!
+      I’m interested in everything technology.
+🌱 I’m currently learning more about fullstack web development.
+💞️ I’m looking to collaborate on web development project using javascript.
+📫 How to reach me @maximus_kai on twitter
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 hover:bg-slate-200 text-white'>
