@@ -13,9 +13,9 @@ export default function Hero() {
       </h1>
       <p className='text-[#adb7b8] text-lg lg:text-xl mb-6 font-medium'>
       I’m interested in everything technology.
-🌱 I’m currently learning more about fullstack web development.
-💞️ I’m looking to collaborate on web development project using javascript.
-📫 How to reach me @maximus_kai on twitter
+ I’m currently learning more about fullstack web development.
+ I’m looking to collaborate on web development project using javascript.
+ How to reach me @maximus_kai on twitter
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 hover:bg-slate-200 text-white'>
