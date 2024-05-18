@@ -1,15 +1,36 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+
+import { TypeAnimation } from 'react-type-animation';
+
+
+
 export default function Hero() {
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
         <div className='col-span-7 place-self-center text-center sm:text-left'>   
     <h1 className="text-white text-4xl lg:text-6xl sm:text-5xl font-extrabold mb-4 ">
-            <span className='text-transparent text-white bg-clip-text bg-gradient-to-r from-blue-500 to-orange-500'>
+            <span className='text-transparent text-white bg-clip-text bg-gradient-to-r from-blue-500 to-orange-500'>    
             Hello, I&apos;m{" "}
             </span> 
-            Tomiwa
+            <TypeAnimation
+             sequence={[
+        'Tomiwa',
+        1000, 
+        ' A Developer',
+        1000,
+        'An Engineer',
+        1000,
+        'A 3D Artist',
+        1000
+      ]}
+      wrapper="span"
+      speed={10}
+      repeat={Infinity}
+      />
+            
       </h1>
       <p className='text-[#adb7b8] text-lg lg:text-xl mb-6 font-medium'>
    I&apos;m interested in everything technology.
