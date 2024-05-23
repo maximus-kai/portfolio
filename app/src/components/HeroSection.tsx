@@ -40,7 +40,7 @@ export default function Hero() {
    How to reach me at maximus_kai on twitter
           </p>
           <div>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 hover:bg-slate-200 text-white'>
+            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 hover:bg-slate-800 hover:text-black text-white'>
               Hire me
             </button>
             <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500  text-white hover:bg-slate-800 mt-3'>

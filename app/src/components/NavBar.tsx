@@ -20,20 +20,20 @@ const navLinks = [
     }
 ]
 const NavBar = () => {
-    const [navBarOpen, setNavBarOpen] = useState(true);
+    const [navBarOpen, setNavBarOpen] = useState(false);
   return (
       <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212]  bg-opacity-90'>
           <div className="flex flex-wrap item-center justify-between mx-auto p-8">
               <Link href={"/"} className="text-2xl md:text-5xl text-white  mt-10font-semibold" >
-                  <FireIcon className='text-purple-500 flex items-center hover:border-white h-10 w-10 '/>
+                  <FireIcon className='text-purple-500 flex items-center hover:text-white h-10 w-10 '/>
               </Link>
               <div className="mobile-menu block md:hidden">
                   {
-                      navBarOpen ? (<button className=''>
-                          <Bars3Icon className='text-slate-200 flex items-center border rounded border-slate-200 hover:border-white h-5 w-5 ' />
+                      !navBarOpen ? (<button onClick={()=>setNavBarOpen(true)} className=''>
+                          <Bars3Icon className='text-slate-200 flex items-center border rounded border-slate-200 hover:border-white h-5 w-5 mt-3' />
                       </button>):
-                  (<button className=''>
-                     <XMarkIcon className='text-slate-200 flex items-center border rounded border-slate-200 hover:border-white h-5 w-5 '/>
+                          (<button onClick={()=> setNavBarOpen(false) } className=''>
+                     <XMarkIcon className='text-slate-200 flex items-center border rounded border-slate-200 hover:border-white h-5 w-5 mt-3'/>
                   </button>)
                           
                   }
