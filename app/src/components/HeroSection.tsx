@@ -53,7 +53,7 @@ export default function Hero() {
           <div className=' rounded-full aspect-square bg-[#181818] w-[250px] h-[250px] relative'>
           <Image
               className='absolute transform -translate-x-1/2   left-1/2'
-            src="/images/dev.png"
+            src="/images/moi2.png"
             alt='hero image'
             width={250}
             height={250} />
