@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export default function NavLink({href, title}) {
+export default function NavLink({href, title}:{href:any,title:any}) {
   return (
       <Link
           href={href}
