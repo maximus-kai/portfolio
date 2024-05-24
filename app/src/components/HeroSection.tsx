@@ -37,7 +37,7 @@ export default function Hero() {
    I&apos;m interested in everything technology.
    I&apos;m currently learning more about fullstack web development.
    I&apos;m looking to collaborate on web development project using javascript.
-   How to reach me at maximus_kai on twitter
+   reach me at @maximus_kai on twitter
           </p>
           <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 hover:bg-slate-800 hover:text-black text-white'>
