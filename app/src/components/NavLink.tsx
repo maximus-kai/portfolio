@@ -1,5 +1,13 @@
-import Link from 'next/link'
-export default function NavLink({href, title}:{href:any,title:any}) {
+import Link from 'next/link';
+import React from 'react';
+
+interface NavLinkProps{
+  href: string;
+  title: string;
+  children?: React.ReactNode;
+}
+
+ const NavLink: React.FC<NavLinkProps> = ({href, title, children})=> {
   return (
       <Link
           href={href}
@@ -8,3 +16,4 @@ export default function NavLink({href, title}:{href:any,title:any}) {
       </Link>
   )
 }
+export default NavLink;
