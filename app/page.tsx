@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroSection from "./src/components/HeroSection";
 import NavBar from "./src/components/NavBar";
+import Sandbox  from "./src/components/Sandbox";
 
 export default function Home() {
   return (

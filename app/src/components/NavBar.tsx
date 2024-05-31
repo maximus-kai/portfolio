@@ -9,7 +9,7 @@ import { Bars3Icon,XMarkIcon, FireIcon } from '@heroicons/react/16/solid';
 const navLinks = [
     {
         title: 'About',
-        path: '#About'
+        path: 'about'
     },
     {
         title: 'Projects',
@@ -20,7 +20,7 @@ const navLinks = [
         path: '#Contacts'
     }
 ]
-const NavBar = () => {
+const NavBar: React.FC = () => {
     const [navBarOpen, setNavBarOpen] = useState(false);
   return (
       <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212]  bg-opacity-90'>
@@ -45,7 +45,7 @@ const NavBar = () => {
 
               <ul className='flex p-4 md:p-0 md:flex-row '>{navLinks.map((link, index) =>(
                       <li key={index}>
-                          <NavLink href={'link.path'} title={link.title} > {link.title} </NavLink>
+                          <NavLink href={link.path} title={link.title} > {link.title} </NavLink>
                       </li>
                   )
                 )
@@ -53,8 +53,8 @@ const NavBar = () => {
                   </ul>
               </div>
           </div>
-          {navBarOpen?  <MenuOverlay links = {navLinks} />: null}
-    </nav>
+          {navBarOpen ? <MenuOverlay/>: null}
+    </nav>  
   )
 }
 export default NavBar;
