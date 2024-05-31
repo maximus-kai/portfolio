@@ -22,7 +22,7 @@ export default function Hero() {
         1000, 
         ' A Developer',
         1000,
-        'An Engineer',
+        'A Network Engineer',
         1000,
         'A 3D Artist',
         1000
