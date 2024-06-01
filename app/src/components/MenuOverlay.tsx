@@ -1,31 +1,25 @@
 import React from 'react';
-import NavLink from './NavLink';
+import Link from 'next/link';
 
-const navLinks = [
-  {
-      title: 'About',
-      path: 'about'
-  },
-  {
-      title: 'Projects',
-      path: '#Projects'
-  },
-  {
-      title: 'Contacts',
-      path: '#Contacts'
-  }
-]
+interface MenuOverlayProps{
+  href: string;
+  title: string;
+  children?: React.ReactNode;
+}
 
-console.log('menu overlay component')
-const MenuOverlay = () => {
+
+const MenuOverlay: React.FC<MenuOverlayProps> = ({href,title, children}) => {
   console.log('before return')
   return (
-    <ul className='flex flex-col py-4 items-center text-white'>
-      {navLinks[2].title}
-    </ul>
+    <Link
+      href={href}
+      className='block py-2 text-center
+           hover:text-white 
+           text-[#adb7be] sm:text-xl round'
+    >
+    {title}
+    </Link>
   )
 }
 
 export default MenuOverlay;
-
-// linkk :MenuOverlayProps

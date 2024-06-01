@@ -13,11 +13,11 @@ const navLinks = [
     },
     {
         title: 'Projects',
-        path: '#Projects'
+        path: 'projects'
     },
     {
         title: 'Contacts',
-        path: '#Contacts'
+        path: 'contacts'
     }
 ]
 const NavBar: React.FC = () => {
@@ -53,7 +53,14 @@ const NavBar: React.FC = () => {
                   </ul>
               </div>
           </div>
-          {navBarOpen ? <MenuOverlay/>: null}
+          <div className='md:hidden'>
+              {navBarOpen ? (navLinks.map((link, index) => (
+                  <li key={index}>
+                      <MenuOverlay href={link.path } title={link.title} />
+                     </li>
+              ))) :
+          null}
+              </div>
     </nav>  
   )
 }
