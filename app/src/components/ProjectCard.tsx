@@ -20,7 +20,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ImageUrl,title,description,gitU
               src={ImageUrl}
               alt='project 1'
               width={500}
-          height={500} />
+              height={500} />
         <div className='
         overlay 
         items-center
