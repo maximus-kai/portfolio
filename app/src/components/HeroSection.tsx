@@ -15,6 +15,7 @@ export default function Hero() {
             <span className='text-transparent  bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500'>    
               Hello, I&apos;m{" "}
               <br/>
+
             </span> 
             <TypeAnimation
              sequence={[
