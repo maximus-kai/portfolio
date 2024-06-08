@@ -8,7 +8,7 @@ interface MenuOverlayProps{
 }
 
 
-const MenuOverlay: React.FC<MenuOverlayProps> = ({href,title, children}) => {
+const MenuOverlay: React.FC<MenuOverlayProps> = ({href,title,}) => {
   console.log('before return')
   return (
     <Link

@@ -7,7 +7,7 @@ interface NavLinkProps{
   children?: React.ReactNode;
 }
 
- const NavLink: React.FC<NavLinkProps> = ({href, title, children})=> {
+ const NavLink: React.FC<NavLinkProps> = ({href, title,})=> {
   return (
       <Link
           href={href}
