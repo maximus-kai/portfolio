@@ -1,43 +1,48 @@
 'use client'
 import React from 'react'
-import AnimatedNumbers from "react-animated-numbers";
+// import AnimatedNumbers from "react-animated-numbers";
+import { motion } from 'framer-motion';
+import dynamic from "next/dynamic";
+const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+  ssr: false,
+});
 
 const AchievementList = [
     {
         metric:'Projects',
         value: '100',
-        prefix: '',
+        prefix: '.',
         postfix: '+'
     },
     {
         metric:'Users',
         value: '1',
-         prefix: '',
+         prefix: '.',
         postfix: 'M+'
     },
     {
         metric:'Awards',
         value: '10',
-         prefix: '',
+         prefix: '.',
         postfix: '+'
     },
     {
         metric:'Years',
         value: '5',
-         prefix: '',
+         prefix: '.',
         postfix: '+'
     }
 ]
 const Achievments = () => {
     return (
-        <div className='py-8  xl:gap-16 sm:py-16 xl:px-16'>
-                 <div className='border border-[#33353f] rounded-md py-8 px-17 flex flex-row items-center justify-between'>
+        <div className='py-8 xl:gap-16 sm:py-16 xl:px-16'>
+                 <div className='border border-[#33353f] rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between'>
                 {
                     AchievementList.map((eachMetric, index) => (
                         <div className=' flex flex-col mx-4 items-center justify-center' key={index}>
-                            <h2 className='text-white text-2xl font-bold flex flex-row'>
+                            <h2 className='text-white text-2xl font-bold flex py-2 flex-row'>
                             {eachMetric.prefix}
-                            {/* <AnimatedNumbers 
+                            <AnimatedNumbers 
                                 className=''
                                 fontStyle={{
                                     fontSize: 40,
@@ -51,7 +56,7 @@ const Achievments = () => {
                                duration: index + 0.3,
                                                     })}                                                                                                                         
                            animateToNumber={Number(eachMetric.value)}
-                            />  */}
+                            /> 
                             {eachMetric.postfix}
                         </h2>
                         <p className='text-[#adb7be] text-base'>{ eachMetric.metric}</p>
