@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import AnimatedNumbers from "react-animated-numbers";
+// import AnimatedNumbers from "react-animated-numbers";
 
 const AchievementList = [
     {
@@ -37,7 +37,7 @@ const Achievments = () => {
                         <div className=' flex flex-col mx-4 items-center justify-center' key={index}>
                             <h2 className='text-white text-2xl font-bold flex flex-row'>
                             {eachMetric.prefix}
-                            <AnimatedNumbers 
+                            {/* <AnimatedNumbers 
                                 className=''
                                 fontStyle={{
                                     fontSize: 40,
@@ -51,7 +51,7 @@ const Achievments = () => {
                                duration: index + 0.3,
                                                     })}                                                                                                                         
                            animateToNumber={Number(eachMetric.value)}
-                            /> 
+                            />  */}
                             {eachMetric.postfix}
                         </h2>
                         <p className='text-[#adb7be] text-base'>{ eachMetric.metric}</p>
