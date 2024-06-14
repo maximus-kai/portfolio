@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-// import AnimatedNumbers from "react-animated-numbers";
+import AnimatedNumbers from "react-animated-numbers";
 
 const AchievementList = [
     {
